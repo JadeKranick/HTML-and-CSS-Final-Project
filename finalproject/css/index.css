@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size:1.5em;
+    background-color: #BFB5AD;
+}
+#mySidenav a {
+    position: absolute;
+    margin-top: 15%;
+    left: -145px;
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 200px; 
+    text-decoration: none;
+    font-size: 20px;
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+}
+#mySidenav a:hover {
+    left: 0;
+    text-decoration: none; 
+}
+#home {
+    top: 20px;
+    background-color:#655455;
+} 
+#epigenetics {
+    top: 80px;
+    background-color:#946E63;
+}
+#yourScore {
+    top: 140px;
+    background-color:#B28977;
+}
+#infoLinks {
+    top: 200px;
+    background-color:#7D7A85;
+}
+a:link{
+    color:#34353A;
+    text-decoration:underline;
+}
+a:visited{
+    color:#946E63;
+    text-decoration:underline;
+}
+a:hover{
+    color:white;
+    text-decoration:underline;
+    background-color:#7D7A85;
+}
+a:active{
+    color:#483B3F;
+    text-decoration:none;
+}
+#ACE {
+    text-shadow: 2px 2px #483B3F;
+}
+#SCORE {
+    background-color:#B28977;
+    text-shadow: 2px 2px #483B3F;
+}
+#EPIGENETICS {
+    background-color: #946E63;
+    text-shadow: 2px 2px #655455;
+}
+#INFO {
+    background-color:#7D7A85; 
+    text-shadow: 2px 2px 	#34353A;
+}
+header{
+	width:100%;
+	top:0%;
+	color:#A6C3C6;
+	padding:10px;
+	height:auto;
+    opacity:0.8;
+    text-align:center;
+    text-shadow:1px 1px #122D4C;
+}
+section{
+    opacity:.8;
+    background-color: #BFB5AD;
+    color: black;
+    border-radius: 10px;
+}
+summary{
+	color: black;
+    font-size:.9em;
+}
+aside {
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+footer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    opacity:.8;
+}
+img{
+    padding: 10px;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color:#655455;
+    padding: 20px;
+    border-radius: 10px;
+}
+p {
+    color: black;
+}
+.icon-bar {
+    width: 100%;
+    background-color: #655455; 
+    border-radius: 25px;
+    overflow: auto; 
+}
+#article {
+    column-count:2;
+    column-gap:15px;
+    column-rule:6px groove white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float:left; 
+    padding:15px; 
+}
+details {
+    font-size: .8em;
+}
+button {
+    display: inline-block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #946E63;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{ 
+        max-width:1200px;
+        background:url('../images/background.jpg');
+        background-repeat:no-repeat;
+        background-position:center top;
+        background-size:cover;
+        background-color:#111;
+    }
+    @media only screen and (max-width: 768px) {
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+}
